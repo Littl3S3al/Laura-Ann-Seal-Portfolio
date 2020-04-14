@@ -1,0 +1,47 @@
+.splash{
+    height: 100vh;
+    position: fixed;
+    z-index: 100;
+    background-color: #e6e6e6;
+}
+
+.splashLogo{
+    width: 80%;
+    margin: 0 10% 0 10%;
+}
+.splashTitle{
+    width: 90%;
+    margin: 1% 5% 0 5%;
+    position: fixed;
+}
+.splashText{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    color: #0094d9;
+    font-size: 1em;
+    letter-spacing: 0.5em;
+    margin-top: 5vh;
+}
+.splashHide{
+    height: 0vh;
+}
+
+
+/*--------------------------------------------------TABLETS*/
+@media only screen and (min-width: 768px) {
+    /* For tablets: */
+    .splashLogo{
+        width: 80%;
+        margin: 0 10% 0 10%;
+    }
+    .splashTitle{
+        width: 80%;
+        margin: 1% 10% 0 10%;
+    }
+}
+
+/*--------------------------------------------------DESKTOP*/
+@media only screen and (min-width: 992px) {
+    /* For desktop: */
+
+}

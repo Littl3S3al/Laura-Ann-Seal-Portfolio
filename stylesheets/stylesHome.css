@@ -1,0 +1,178 @@
+
+.backgroundScene{
+    position: absolute;
+    z-index: 1;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+}
+.layerX{
+    background-image: url("../images/background.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    width: 100vw;
+    height: 50vh;
+}
+
+.background{
+    position: absolute;
+    margin-top: 10vh;
+    width: 120vw;
+}
+.logo{
+    position: absolute;
+    margin: 15vh 25vw;
+    width: 40vw;
+}
+
+
+
+
+
+.projectBox{
+    height: 300px;
+    width: 140px;
+    background-color:#cccccc;
+    border-radius: 20px;
+    margin: 10px;
+    display: inline-block;
+    
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+
+#npa{
+    background-image: url("../images/projects/npaProject.jpg");
+}
+#voyagers{
+    background-image: url("../images/projects/voyagerProject.jpg");
+}
+#net{
+    background-image: url("../images/projects/netProject.jpg");
+}
+#south32{
+    background-image: url("../images/projects/south32Project.jpg");
+}
+#storyBoard{
+    background-image: url("../images/projects/storyboardProject.jpg");
+}
+#infographic{
+    background-image: url("../images/projects/infographicProject.jpg");
+}
+#cashConnect{
+    background-image: url("../images/projects/cashConnectProject.jpg");
+}
+#uhc{
+    background-image: url("../images/projects/urbanProject.jpg");
+}
+#animation{
+    background-image: url("../images/projects/animationProject.jpg");
+}
+#transnet{
+    background-image: url("../images/projects/transnetProject.jpg");
+}
+#crestCapital{
+    background-image: url("../images/projects/ccProject.jpg");
+}
+
+.projectContainer{
+    margin: 0px auto 20vh auto;
+    width: 100%;
+    top: 60vh;
+    position: absolute;
+    z-index: 50;
+}
+.projectButton{
+    width: 120px;
+    background-color:rgb(204, 204, 204, 0.95);
+    height: 120px;
+    border-radius: 50%;
+    margin: 90px 10px;
+    padding: 40px 10px;
+    border: white solid 2px;
+    transition-duration: 0.5s;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+.projectButton:hover{
+    box-shadow: inset 0 0 0 10px white;
+    transition-duration: 0.5s;
+    cursor: pointer;
+
+    width: 125px;
+    height: 125px;
+    border-radius: 10px;
+    margin: 88.5px 8.5px;
+    border: white solid 2px;
+}
+
+/*--------------------------------------------------MOBILE LANDSCAPE*/
+@media (orientation: landscape){
+    .layerX{
+        height: 100vh;
+    }
+    .background{
+        width: 80vw;
+        margin-top: 0vh;
+        margin-left: 20vw;
+    }
+    .logo{
+        width: 15vw;
+        margin: 30vh 42.5vw;
+    }
+    .projectContainer{
+        top: 100vh;
+    }
+  }
+
+/*--------------------------------------------------TABLETS*/
+@media only screen and (min-width: 768px) {
+    /* For tablets: */
+    .projectContainer{
+        top: 80vh;
+    }
+    .layerX{
+        height: 75vh;
+    }
+    .background{
+        width: 140vw;
+        left: -10vw;
+    }
+    .logo{
+        width: 30vw;
+        margin: 30vh 35vw;
+    }
+}
+
+
+/*--------------------------------------------------LARGE SCREEN*/
+@media only screen and (min-width: 992px) {
+    /* For desktop: */
+
+
+
+}
+
+/*-------------------------------------------------- LARGE SCREEN LANDSCAPE*/
+@media only screen and (min-width: 992px) and (orientation: landscape){
+    .layerX{
+        height: 50vw;
+    }
+    .background{
+        width: 80vw;
+        margin-top: 0 ;
+        margin-left: 30vw;
+
+    }
+    .logo{
+        width: 15vw;
+        margin: 30vh 42.5vw;
+    }
+    .projectContainer{
+        top: 55vw;
+    }
+  }

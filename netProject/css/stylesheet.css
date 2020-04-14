@@ -1,0 +1,318 @@
+html, body {
+				height: 100%;
+			}
+body {
+	margin: 0;
+	font-family: 'Barlow', sans-serif;
+	font-weight: 200;
+	overflow: hidden;
+	color: white;
+
+	/*background gradient code sourced from code pen*/
+	background: linear-gradient(-45deg, #000000, #02063F, #000000, #02063F);
+	background-size: 400% 400%;
+	animation: Gradient 60s ease infinite;
+	}		
+
+
+h1{
+	font-family: 'Barlow', sans-serif;
+	font-weight: 100;
+	font-size: 4em;
+}
+h2{
+	font-family: 'Barlow', sans-serif;
+	font-weight: 400;
+	font-size: 1em;
+	text-transform: uppercase;
+	letter-spacing: 5px;
+}
+p{
+	font-size: 0.7em;
+}
+
+
+a {
+	color: #ffffff;
+	text-decoration: none;
+	}
+a:hover {
+	color: #42d4f4;
+
+	}
+
+
+/*on home page load: animation*/
+.onLoadAnim{
+  position: absolute;
+  text-align: center;
+  z-index: 5;
+  background: #000000;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;	
+  animation: disappear 2s linear 9s 1 forwards, remove 1s linear 11s 1 forwards;
+}
+#heading{
+	margin-top: 30vh;
+	opacity: 0;
+	animation: appear 2s linear 1s forwards, disappear 2s linear 9s  forwards;
+	z-index: 1;
+}
+#subHeading{
+	opacity: 0;
+	animation: appear 2s linear 2s forwards, disappear 2s linear 8s  forwards;
+	z-index: 1;
+}
+
+
+/*this is my globe svg animated to "draw" itself*/
+.globe{
+	height: 110vh;
+	position: absolute;
+	animation: disappear 2s linear s 1 forwards;
+	opacity: 0.6;
+	z-index: 10;
+	left: 25vw;
+	top: -10vh;
+}
+.cls-1, .cls-2, .cls-3{
+	fill:none;
+	stroke:#FFFFFF;
+	stroke-miterlimit:10;
+	stroke-width:1px;
+	stroke-dasharray: 8000px;
+	stroke-dashoffset: 8000px;    
+	animation: draw 15s linear 1s 1 forwards;
+}
+.cls-4{
+	opacity: 0;
+	animation: appear 6s linear 2s forwards;
+}
+
+
+
+
+
+
+
+#info {
+	position: absolute;
+	top: 20px;
+	bottom: 20px;
+	text-align: center;
+	background-color: rgb(26, 48, 130, 0.7);
+	height: 85%;
+	width: 0;
+	opacity: 0;
+	padding: 2%;
+	overflow: hidden;
+	overflow-y: scroll;
+	}
+	/*hiding scroll bar sourced from: https://stackoverflow.com/questions/16670931/hide-scroll-bar-but-while-still-being-able-to-scroll*/
+	::-webkit-scrollbar {
+    width: 0px;  /* remove scrollbar space */
+    background: transparent;  /* optional: just make scrollbar invisible */
+	}
+		
+.popup{
+	width: 90%;
+	position: absolute;
+	text-align: left;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    transition: 1s;	
+	}
+.invisibilityCloak{
+	display: none;
+	}
+	.hidden{
+	display: none;
+	}
+
+
+
+
+/*all of the platform minformation styling*/
+.netObject {
+	width: 300px;
+	height: 300px;
+	box-shadow: 0px 0px 12px rgba(113,185,252,0.5);
+	border: 2px solid rgba(161,208,255,0.5);
+	border-radius: 30%;
+	text-align: center;
+	cursor: default;
+	}
+.netObject:hover {
+	box-shadow: 0px 0px 12px rgba(125,223,232,1);
+	border: 2px solid rgba(249,249,249,0.75);
+	}
+.netObject .ranking {
+	position: absolute;
+	top: 50px;
+	right: 50px;
+	font-size: 20px;
+	font-family: 'Barlow', sans-serif;
+	text-shadow: 0 0  5px white;
+	color: rgba(127,255,255,0.9);
+	}
+.netObject .logo {
+	width: 125px;
+	height: auto;
+	position: absolute;
+	top: 40px;
+	left: 0px;
+	right: 0px;
+	margin: auto;
+	opacity: 0.6;
+				}
+.netObject .platform {
+	position: absolute;
+	margin: auto;
+	bottom: 15px;
+	left: 0px;
+	right: 0px;
+	width: auto;
+	height: 100px;
+	font-family: 'Carrois Gothic SC', sans-serif;
+	font-size: 22px;
+	letter-spacing: 5px;
+	color: rgba(247, 248, 249, 0.8);
+	}
+.netObject .details {
+	position: absolute;
+	bottom: 30px;
+	left: 0px;
+	right: 0px;
+	padding: 0 40px 0 40px;
+	font-size: 14px;
+	color: rgba(252,252,252,0.75);
+	}
+.ranking2{
+	float: right;
+	border: 3px solid white;
+	border-radius: 50%;
+	width: 90px;
+	height: 80px;
+	padding-top: 8px;
+	font-size: 3em;
+	font-family: 'Barlow', sans-serif;
+	font-weight: bolder;
+	text-align: center;
+	color: white;
+}
+.stat1{
+	font-weight: 800;
+	font-size: 3em;
+	color: #42d4f4;
+}
+.stat2{
+	font-weight: 800;
+	font-size: 1.5em;
+
+}
+
+
+
+/*net neutrality floating information styling*/
+.neutrality{
+	 width: auto;
+	 height: 0;
+}
+
+.light{
+	width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #fff;
+    transition-duration: 1s;
+    transform: translate(-50px, -50px);
+    cursor: pointer;
+    box-shadow:
+        0 0 60px 15px #fff,  /* inner white */
+        0 0 100px 15px #f0f, /* middle magenta */
+        0 0 140px 15px #0ff; /* outer cyan */
+}
+.light:before {
+  content: "";
+  position:absolute;
+  width: 100px;
+  height: 100px;
+}
+.light:hover{
+		transition-duration: 1s;
+	    box-shadow:
+        0 0 60px 30px #fff,  /* inner white */
+        0 0 100px 30px #f0f, /* middle magenta */
+        0 0 140px 30px #0ff; /* outer cyan */
+}
+
+.netFact{
+	margin-top: 20px;
+	font-family: 'Barlow', sans-serif;
+	font-weight: 400;
+	font-size: 2em;
+	text-transform: uppercase;
+	letter-spacing: 5px;
+}
+.bubbles{
+	position: absolute;
+	bottom: 20px;
+	right: 1px;
+	text-align: rigth;
+	background-color: rgb(0,0,0, 0.5);
+	height: 200px;
+	width: 0;
+	opacity: 0;
+	padding: 0 2%;
+	overflow: hidden;
+	font-weight: 50;
+	font-size: 1.5em;
+}
+
+.notification{
+	display: none;
+}
+
+/*animations*/
+@keyframes remove{
+	100%{width: 0;}
+}
+@keyframes draw {
+  75% {stroke-dashoffset: 0;}
+  100% {stroke-dashoffset: 8000px;}
+}
+@keyframes disappear{
+	0%{opacity: 1;}
+	100%{opacity: 0;}
+}
+@keyframes appear{
+	to{opacity: 1;}
+}
+@keyframes Gradient {
+	0% {background-position: 0% 50%}
+	50% {background-position: 100% 50%}
+	100% {background-position: 0% 50%}
+}
+
+
+
+@media only screen and (max-width: 800px) {
+	#container{display: none;}
+	#info{display: none;}
+	.bubbles{display: none;}
+	.notification{
+		display: block;
+		width: 100vw;
+		height: 100vh;
+		background-color: black;
+		padding: 0 30% 0 10%;
+	}
+
+}

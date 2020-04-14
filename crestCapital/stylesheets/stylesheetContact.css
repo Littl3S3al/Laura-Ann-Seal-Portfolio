@@ -1,0 +1,62 @@
+.contactLink{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    color: white;
+    font-size: 1em;
+}
+.contactLink:hover{
+    color: #ec6d62;
+    text-decoration: none;
+    transition-duration: 0.5s
+}
+.contactButton{
+    margin:5vh 0 1vh 0;
+    height: 15vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    position: relative;
+}
+.contactButton:hover{
+      cursor: pointer;
+      transition-duration: 0.5s
+}
+.emailButton{
+    background-image: url("../images/email.png");
+}
+.emailButton:hover{
+    background-image: url("../images/emailHover.png");
+}
+.callButton{
+    background-image: url("../images/call.png");
+}
+.callButton:hover{
+    background-image: url("../images/callHover.png");
+}
+.addressButton{
+    background-image: url("../images/address.png");
+}
+.addressButton:hover{
+    background-image: url("../images/addressHover.png");
+}
+
+.directors{
+    width: 50%;
+    margin: auto;
+}
+
+
+
+
+.map-container{
+    overflow:hidden;
+    position:relative;
+    height:100%;
+    }
+.map-container iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}

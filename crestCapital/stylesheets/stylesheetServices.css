@@ -1,0 +1,53 @@
+.serviceImage{
+    width: 50%;
+}
+.imageBlock{
+    height: 100%;
+}
+
+.topImage{
+    width: 80%;
+}
+.bgImage{
+    width: 100%;
+    top: 0;
+    position: absolute;
+}
+
+
+/*--------------------------------------------------TABLETS*/
+@media only screen and (min-width: 768px) {
+    /* For tablets: */
+    .topImage{
+        width: 60%;
+    }
+}
+
+
+/*--------------------------------------------------DESKTOP: PORTRAIT*/
+@media only screen and (min-width: 992px) and (orientation : portrait) {
+    /* For desktop: */
+    .serviceImage{
+        width: 80%;
+        margin-top: 30%;
+    }
+
+    .topImage{
+        width: 40%;
+    }
+}
+
+
+/*--------------------------------------------------DESKTOP*/
+@media only screen and (min-width: 992px) and (orientation : landscape) {
+    /* For desktop: */
+    .serviceImage{
+        width: 80%;
+        margin-top: 0;
+    }
+
+    .topImage{
+        width: 20%;
+    }
+
+}

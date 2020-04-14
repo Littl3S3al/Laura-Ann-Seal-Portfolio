@@ -1,0 +1,205 @@
+  
+  
+  
+  
+  
+  /*--------------------------------------------------landing section*/
+
+.landing-text{
+    padding-top: 8vh;
+}
+.animationOne{
+    position: absolute;
+}
+.animationTwo{
+    position: absolute;
+    width: 100vw;
+}
+.animationOneSmall{
+    width: 90vw;
+}
+.landingAnimation{
+    margin-bottom: 50vh;
+}
+.animationOneBg{
+    margin-top: -10px;
+}
+.scrollIcon{
+    width: 60px;
+    position: fixed;
+    top: 87vh;
+}
+
+
+/*--------------------------------------------------about us section*/
+.animationThree{
+    position: absolute;
+    width: 90vw;
+    margin: 0 5vw 30vh 5vw;
+}
+.animationFour{
+    position: absolute;
+    margin-top: 10vw;
+    width: 50vw;
+}
+.animationFive{
+    width: 70%;
+    margin-left: 15%;
+}
+.aboutUsText{
+    margin-top: 30vh;
+}
+ul.aboutList{
+    list-style-image: url(../images/bulletDesktop.png);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    color: black;
+    font-size: 1em;
+    list-style-position: outside;
+}
+
+
+/*--------------------------------------------------services section*/
+.serviceImage{
+    height: 100px;
+}
+.serviceBox{
+width: 100%;
+height: 100%;
+padding: 5%;
+}
+.serviceBox.red:hover{
+    background-color: #e5938f;
+    cursor: pointer;
+    transition-duration: 0.5s;
+}
+.serviceBox.lightBlue:hover{
+background-color: #8adbdd;
+cursor: pointer;
+transition-duration: 0.5s;
+}
+.serviceBox.darkBlue:hover{
+    background-color: #507791;
+    cursor: pointer;
+    transition-duration: 0.5s;
+}
+.serviceBox.yellow:hover{
+    background-color: #edc988;
+    cursor: pointer;
+    transition-duration: 0.5s;
+}
+
+
+/*--------------------------------------------------our directors section*/
+.directorImage{
+    width: 100%;
+    padding: 10% 10% 5% 10%;
+}
+
+/*--------------------------------------------------contact us section*/
+.contactUs{
+    margin-top: 10vh;
+    margin-left: 0;
+    margin-right: 0;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+}
+.contactLink{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    color: white;
+    font-size: 1em;
+}
+.contactLink:hover{
+    color: #ec6d62;
+    text-decoration: none;
+    transition-duration: 0.5s
+}
+.contactButton{
+    margin:5vh 0 1vh 0;
+    height: 15vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    position: relative;
+}
+.contactButton:hover{
+      cursor: pointer;
+      transition-duration: 0.5s
+}
+.emailButton{
+    background-image: url("../images/email.png");
+}
+.emailButton:hover{
+    background-image: url("../images/emailHover.png");
+}
+.callButton{
+    background-image: url("../images/call.png");
+}
+.callButton:hover{
+    background-image: url("../images/callHover.png");
+}
+.addressButton{
+    background-image: url("../images/address.png");
+}
+.addressButton:hover{
+    background-image: url("../images/addressHover.png");
+}
+
+
+/*--------------------------------------------------TABLETS*/
+@media only screen and (min-width: 768px) {
+    /* For tablets: */
+    .aboutSection{
+        margin-top: 20vh;
+    }
+    .animationOneSmall{
+        width: 50vw;
+        margin-left: 25vw;
+        margin-top: 10vh
+    }
+    .landingAnimation{
+        margin-bottom: 70vh;
+    }
+    .landingAnimation{
+        margin-bottom: 30vh;
+    }
+    .aboutUsText{
+        margin-top: 20vh;
+    }
+    .animationThree{
+        position: absolute;
+        width: 40vw;
+        margin: 10% 30vw 0 30vw;
+    }
+    .aboutUsText{
+        margin-top: 0;
+    }
+    .aboutText{
+        margin-top: 30vw;
+        padding-left: 5%;
+    }
+    .serviceImage{
+        height: 150px;
+    }
+}
+
+
+/*--------------------------------------------------DESKTOP*/
+@media only screen and (min-width: 992px) {
+    /* For desktop: */
+    .animationOneSmall{
+        width: 50vw;
+        margin-left: 25vw;
+        margin-top: 5vh
+    }
+    .aboutText{
+        margin-top: 0;
+    }
+    .landingAnimation{
+        height: 40vh;
+    }
+    .aboutUsText{
+        margin-top: 0;
+    }
+}

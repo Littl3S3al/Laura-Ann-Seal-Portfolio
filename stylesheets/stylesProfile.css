@@ -1,0 +1,21 @@
+.profileImage{
+    width: 100%;
+}
+.column{
+    display: inline-block;
+}
+.underlined{
+    text-decoration: underline #00a99d;
+}
+.icon{
+    width: 40px;
+    display: inline;
+    margin-right: 20px;
+    margin-top: -20px;
+}
+.skills{
+    width: 90%;
+}
+th{
+    width: 30%;
+}

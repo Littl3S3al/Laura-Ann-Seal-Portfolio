@@ -1,0 +1,39 @@
+.mobileImage{
+    width: 100vw;
+}
+.profileImage{
+    width: 50%;
+    margin: 0 25% 0 25%;
+}
+
+.topImage{
+    transform: translateY(5px);
+}
+.midImage{
+    transform: translateY(-10px);
+}
+#davidBio{
+    transform: translateY(-15px)
+}
+.bottomImage{
+    transform: translateY(-20px);
+}
+/*--------------------------------------------------TABLETS*/
+@media only screen and (min-width: 768px) {
+    /* For tablets: */
+
+}
+
+/*--------------------------------------------------DESKTOP*/
+@media only screen and (min-width: 992px) {
+    /* For desktop: */
+    .profileImage{
+        width: 90%;
+        margin: 0 5% 0 5%;
+    }
+}
+
+/*--------------------------------------------------LANDSCAPE*/
+@media (orientation: landscape) {
+
+  }

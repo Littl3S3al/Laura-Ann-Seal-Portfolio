@@ -1,0 +1,115 @@
+.topLogo:hover{
+    cursor: pointer;
+}
+.navColumn{
+    text-align: center
+}
+.TabNav{
+    margin-top: 25vh;
+}
+
+.sidenav {
+    height: auto;
+    width: auto;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    margin-top: 40vh;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 0 20px 20px 0;
+  }
+  
+  .sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+  }
+  
+  .sidenav a:hover {
+    color: #00a99d;
+  }
+
+
+.left{
+    background-image: url("../images/btnLeft.png");
+    transition-duration: 0.5s;
+}
+.right{
+    background-image: url("../images/btnRight.png");
+    transition-duration: 0.5s;
+}
+.projects{
+    background-image: url("../images/grid.png");
+    transition-duration: 0.5s;
+}
+.left:hover{
+    background-image: url("../images/btnLeftHover.png");
+    transition-duration: 0.5s;
+}
+.right:hover{
+    background-image: url("../images/btnRightHover.png");
+    transition-duration: 0.5s;
+}
+.projects:hover{
+    background-image: url("../images/gridHover.png");
+    transition-duration: 0.5s;
+}
+
+
+.leftTab{
+    background-image: url("../images/btnLeftTab.png");
+    transition-duration: 0.5s;
+    top: 20vh;
+    left: 0;
+}
+.rightTab{
+    background-image: url("../images/btnRightTab.png");
+    transition-duration: 0.5s;
+}
+.projectsTab{
+    background-image: url("../images/gridTab.png");
+    transition-duration: 0.5s;
+}
+.leftTab:hover{
+    background-image: url("../images/btnLeftHover.png");
+    transition-duration: 0.5s;
+}
+.rightTab:hover{
+    background-image: url("../images/btnRightHover.png");
+    transition-duration: 0.5s;
+}
+.projectsTab:hover{
+    background-image: url("../images/gridHover.png");
+    transition-duration: 0.5s;
+}
+
+
+.fullWidthImage{
+    width: 100%;
+}
+.firstImage{
+    width: 100%;
+    height: 50%;
+}
+
+/*--------------------------------------------------TABLETS*/
+@media only screen and (min-width: 768px) {
+    /* For tablets: */
+
+
+}
+
+/*--------------------------------------------------DESKTOP*/
+@media only screen and (min-width: 992px) {
+    /* For desktop: */
+
+}
+
+/*--------------------------------------------------LANDSCAPE*/
+@media (orientation: landscape) {
+
+  }
