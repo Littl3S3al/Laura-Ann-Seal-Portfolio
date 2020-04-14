@@ -71,6 +71,9 @@ a:hover{
     letter-spacing: 0.5rem;
     font-size: 0.5rem;
 }
+.brand{
+    width: 30px;
+}
 .linkedIn{
     background-image: url("../images/linkedInIcon.svg");
     background-size: cover;
